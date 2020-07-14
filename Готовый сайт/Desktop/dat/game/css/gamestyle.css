@@ -1,0 +1,36 @@
+﻿body {
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #444;
+    line-height: 1.6;
+    background: '#fcfcfc'
+}
+table {
+    height:560px;
+    background-image: url("../images/game.jpg");
+    background-repeat: no-repeat;
+    min-width: 800px;
+}
+td {
+    width:199px; 
+    valign:middle
+}
+.panel { 
+    cursor: pointer;
+    display: table-cell; 
+    width: inherit; 
+    height: 180px;
+    vertical-align: middle;
+    text-align: center;
+    background-image: radial-gradient( white, rgba(190,225,255,0.9));
+    word-wrap: break-word; /* Перенос слов */  
+    border-radius: 15px; 
+} 
+.hidden {
+  opacity: 0;
+  transition:  opacity 2s linear;
+}
+.scores {
+    color:darkorange;
+}

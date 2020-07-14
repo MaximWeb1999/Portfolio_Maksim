@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+		<title>Паркур – спорт для смелых и модных!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/gamestyle.css">
+	</head>
+    <body>
+    	<table border=0>
+            <script src="js/gamescript.js"></script>
+    		<script>
+                var n=0,count=0, good=0,bad=0,result=0
+    	    	for (var i=0;i<3;i++)	{
+    	    	  document.write ('<tr>')
+    			  for (var j=0;j<4;j++)	{
+    			  	n = i*4+j
+    				document.write ('<td><p class="panel"  onclick="main(this.id)" id="pan'    +n+'">'+united[n]+'</p></td>')
+    			  }
+    			  document.write ('</tr>')
+    			}
+    		</script>
+    		<tr><td colspan=4 bgcolor='#fcfcfc' align="center">
+    			<span> Верных ответов: <span class="scores" id="r">0</span>  
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+    			Неверных ответов: <span class="scores" id="w">0</span> 
+    			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    			Результат: <span class="scores" id="res">0%</span></td>
+            </tr>
+		</table>
+    </body>
+</html>

@@ -1,0 +1,301 @@
+﻿/* Интерактивность */
+/*слайдер и калькулятор*/
+.inside {
+  float: right;
+    margin-left: 30px;  
+}
+.inside img{
+  max-width: 400px !important;  
+}
+
+/*стили для форм*/
+fieldset {
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: #fff;
+    font-family: Arial;
+    color: #407db3;
+}
+.formbutton {
+    /*display: inline-block;*/
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #58abf5;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+/*слайдер*/
+#upper{
+    width: 400px;
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow:  4px 4px 8px 0px rgba(185, 173, 128, 0.75); 
+}
+.photo{
+    position: relative;
+    height: 266px;
+}
+.photo img{
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    transition: opacity 1.5s;
+}
+.photo img.shown{
+     opacity: 1;
+}
+.photo img.arrow{
+    cursor:pointer;
+    position: absolute;
+    top: 0 px;
+    width:40px;
+
+}
+
+
+
+.jumbotron .button:hover {
+    background-color: #6b0abe;
+}
+.jumbotron .button:active{
+    background-color: white;
+    color: #58abf5;
+    padding: 17px 23px;
+}
+.menu li a:hover {
+    /*text-decoration: underline;*/
+    padding: 5px;
+    background-color: #58abf5;
+    color: white;
+    transform: scale(1.2);
+    /*font-size: 18px;*/
+}
+#gall {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.test2 { /*блок*/
+    display:inline-block; /* способ расположения блоков в ряд*/
+    padding: 5px; /*внутренний отступ (от содержимого)*/
+    margin: 0px 0px 5px 25px;    /*внешний отступ (поля)*/
+    opacity: 0.66; /*прозрачность*/
+    cursor:pointer; /*указатель мыши - 'рука'*/
+    transition: all .5s ease-in .2s;
+}
+.test2 img { /*изображение*/
+     width:200px;   /*ширина*/
+     max-width: 600px; /*ограничение по ширине*/ 
+}
+
+.test2:hover {
+    transform: scale(2);
+    opacity: 1;
+    position: relative;
+    z-index: 1000;
+}
+
+/* General */
+	body {
+	    font-family: Arial, Helvetica, sans-serif; /* добавим несколько запасных шрифтов */
+	}
+	p {
+	    font-size: 14px;
+	    color: #444;
+	    line-height: 1.6;
+	}
+	h1 {
+	    font-size: 40px;
+	    color: #fff;
+	}
+	h2 {
+		margin-top:0px;
+	    font-size: 28px;
+	    color: #282828;;
+	}
+	h3 {
+		margin-top:0px;
+	    font-size: 26px;
+	    color: #58abf5;
+	}
+	strong {
+		color: darkorange;
+	}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.brand {
+    font-size: 30px;
+}
+.menu li {
+    float: left;
+    font-size: 16px;
+    list-style: none; /* убираем стандартные маркеры списка */
+}
+.menu {
+    padding-left: 0; /* убираем стандартный левый отступ списка */
+    margin: 0; /* убираем стандартные поля списка */
+}
+.menu li a {
+    text-decoration: none;
+    transition: all .5s; 
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding-top: 30px;
+}
+header .brand {
+    float: left;
+    color: #58abf5;
+    margin-bottom: 30px;
+}
+header .menu {
+    float: right;
+    margin-bottom: 30px;
+}
+header .menu li {
+    padding-left: 20px;
+}
+header .menu li a {
+    color: #aaa;
+}
+.jumbotron {
+    background-image: url(../images/jumbotron.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 300px;
+    text-align: center;
+    clear: both;
+}
+.jumbotron .button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 140px;
+    background-color: #58abf5;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: all 1s;
+    cursor:pointer; 
+}
+/* Services */
+.services img {
+	border-radius: 8px;
+}
+	
+.service {
+    width: 33.333333%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.services {
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* Blog */
+.blog {
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fcfcfc;
+}
+.blog h2 {
+    text-align: center;
+}
+.blog p {
+	text-align: justify;
+}
+.blog .post {
+	clear:both;
+    padding-top: 10px;
+    display: inline-block;
+}
+.blog .post img {
+    float: left;
+    margin-right: 30px;
+    border-radius: 8px;
+    max-width: 280px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #ff7924;
+}
+footer .brand {
+    color: #fff;
+}
+footer .menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer .menu li a {
+    color: #444;
+}
+footer .menu {
+    display: inline-block;
+    margin-top: 30px; /* также добавим отступы */
+    margin-bottom: 15px;
+}
+footer .copyright {
+    font-size: 12px;
+    color: #eee;
+}
+
+@media (max-width: 650px) {
+    .services .service {
+        width: 100% !important;
+        float: none;
+    }
+    .jumbotron {
+    background-size: 1000px;
+    }
+    .blog .post img {
+	    float: none;
+	    display: block;
+	    margin-right: auto;
+	    margin-left: auto;
+        max-width: 280px; /*для фотогалереи*/
+	}
+	.blog .post {
+	    max-width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	}
+	iframe {
+		max-width: 300px;
+	}
+    .test2:hover {
+        transform: scale(1.5);
+    }
+    .inside {
+        float: none;
+        margin-left: 0;
+    }
+}

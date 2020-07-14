@@ -1,0 +1,8 @@
+﻿{
+	"name":"Game",
+	"main": "game.html",
+  	"window": {
+	"width": 825,
+	"height": 610
+	}
+}
