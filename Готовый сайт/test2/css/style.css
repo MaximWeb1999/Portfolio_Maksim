@@ -1,0 +1,55 @@
+﻿body { /*весь документ*/
+    background-color: #c4d9fc; /*цвет фона*/
+    hyphens: none; /*запрет переносов*/
+}
+.test2 { /*блок*/
+    display:inline-block; /* способ расположения блоков в ряд*/
+    padding: 15px; /*внутренний отступ (от содержимого)*/
+    margin: 300px 0px 5px 120px;    /*внешний отступ (поля)*/
+	border: 1px solid orange; /*рамка*/
+	border-radius: 15px; /* закругление углов*/
+	background-color: #eee; /*цвет фона*/
+	box-shadow:  4px 4px 8px 0px rgba(185, 173, 128, 0.75); /*тень*/
+    opacity: 0.66; /*прозрачность*/
+    cursor:pointer; /*указатель мыши - 'рука'*/
+    transition: transform 5s ease-in .5s;
+}
+img { /*изображение*/
+    width:300px;   /*ширина*/ 
+    padding-left: auto; /*выравнивание*/
+    padding-right: auto;
+}
+p { /*абзац*/
+    font-family: Arial; /*шрифт*/
+    font-size: 14px; /*размер текста*/
+    color: #444; /*цвет текста*/
+    line-height: 1; /*интервал*/
+    text-align: center; /*выравнивание по центру*/
+}
+
+/*Трансформации*/
+/*#block1{ transform: scale(1,-0.3); }
+#block2{ transform: scale(-1,1); }
+#block3{ transform: scale(-1,-1);}
+*/
+
+/*#block1{ transform: rotate(90deg); }
+#block2{ transform: rotate(-60deg); }
+#block3{ transform: rotate(20deg);}
+*/
+
+/*#block1{ transform: skew(0, 30deg); }
+#block2{ transform: skew(20deg, 0deg); }
+#block3{ transform: skew(0deg, -30deg);}
+*/
+
+/*#block1{ transform: translate(100px, 30px); }
+#block2{ transform: translate(40px, 0); }
+#block3{ transform: translate(-100px, -100px);}
+*/
+
+div:hover {
+    transform: scale(1.5) rotate(360deg) translate(0,-150px);
+    border-radius: 0px;
+    opacity: 1;
+}

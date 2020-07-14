@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+		<title>Паркур – спорт для смелых и модных!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+    	<script>
+    		function calc() {
+    			g=document.getElementById('gender').value;
+    			w=document.getElementById('weight').value;
+    			h=document.getElementById('height').value/100;
+    			index = Math.round(w/(h*h)*100)/100;
+    			document.getElementById('w_index').innerHTML=index
+    			if ((g==0 && index<20) || (g==1 && index<19)) 
+    				document.getElementById('verdict').innerHTML= "Дефицит веса. В паркуре будете летать!"
+    			else if ((g==0 && index>25) || (g==1 && index>24))
+    				document.getElementById('verdict').innerHTML= "Лишний вес. Паркур поможет сбросить!"
+    			else 
+    				document.getElementById('verdict').innerHTML= "Вес в норме. Паркур - Ваш спорт!"
+    		}
+    	</script>
+        <form>
+		  <fieldset style="width:480px;">
+		    <legend>Готовы к паркуру?</legend>
+		    <p><label for="height" >Рост в см:</label>
+  				<input type="number" id="height" value="170" onchange="calc()" min="50" max="250">
+		    	<label for="weight">Вес в кг:</label>
+  				<input type="number" id="weight" value="60" onchange="calc()" min="10" max="300">
+  			    <label for="gender">Пол</label>
+		    	<select id="gender" value="0" onchange="calc()"></p>
+		    		<option value=0>М</option>
+		    		<option value=1>Ж</option>
+		    	</select>
+		     <p>Индекс массы тела: <span id="w_index" style="color:darkorange"><i>ожидание данных</i></span></p>
+		     <p id="verdict" style="color:darkorange"></p>	
+		  </fieldset>
+		</form>
+		
+		<script>
+    		function auth(l,p) {
+    			if (l=='Автор' && p=='binom') {
+    				document.getElementById('greet').innerHTML= 'Привет, Дмитрий!'
+    				document.getElementById('logpass').hidden=true
+    			}
+    		}
+    	</script>
+
+		<form>
+		  <fieldset id="logpass" style="width:210px;">
+		    <legend>Авторизация</legend>
+		    <p><label for="login" >Логин &nbsp;&nbsp; </label>
+  				<input size="12" id="login"></p>
+		    <p>	<label for="pass">Пароль </label>
+  				<input type="password" size="12" id="pass"></p>
+  			<p><input type="button" id="butt" value = "Войти"    onclick="auth(document.getElementById('login').value, document.getElementById('pass').value)"></p>
+  		  </fieldset>
+  		  <p id="greet" style="color:darkorange"></p>
+   		</form>
+    </body>
+</html>

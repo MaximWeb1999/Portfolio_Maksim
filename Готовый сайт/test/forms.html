@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+		<meta name="Description" content="Паркур – новый модный массовый вид спорта, который соединяет силовые упражнения и спортивную акробатику. История, трюки, видео, обучение от ведущих мастеров Москвы">
+		<meta name="Keywords" content="паркур, акробатика, полоса препятствий, преодоление препятствий, urban sport, parkour, tracer, прыжки, каскадеры, городской спорт, занятия акробатикой, занятия паркуром">
+		<title>Паркур – спорт для смелых и модных!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+    <body>
+        <form>
+          <script>
+            	function rep1(k) {
+  					document.getElementById('reply1').innerHTML=''
+  					age0=document.getElementById('age').value
+  					if (age0)
+  						document.getElementById('reply1').innerHTML='У нас есть занятия паркуром для '+age0+'-летних!<br>'
+  					if (k)	
+  						document.getElementById('reply1').innerHTML += r[k]
+  				}
+  				var q=new Array('Мне интересны занятия паркуром ','Интересно, но не устраивает расписание','Я еще слишком мал для занятий паркуром','Я уже слишком стар для паркура')
+  				var r=new Array('Ждем Вас на занятиях! Позвоните для уточнения расписания. ','Мы можем предложить индивидуальные занятия в удобное для Вас время','Мы занимаемся с детьми от 5 лет! Попроси родителей уточнить.','Занятия с тренером полностью безопасны в любом возрасте!')
+  		  </script>
+		  <fieldset id='details'>
+		    <legend>Предпочтения</legend>
+		    <p><label for="age">Сколько Вам лет?</label>
+  				<input type="number" id="age" min="5" max="100" onchange="rep1()"></p>
+  			<p><label for="favcolor">Ваш любимый цвет?</label>
+  				<input type="color" id="favcolor"  onchange="document.getElementById('details').style.borderColor=this.value "></p>
+  			<p><script>
+			  		for (var g=0; g<4; g++)
+			  			document.write ('<input type="radio" name="parkour"  id="'+g+'"  onclick="rep1(this.id)">'+q[g]+'<br>')
+				</script></p>
+  			<p>	<input type="checkbox" name="add" id="q2" checked>Я согласен с условиями Пользовательского соглашения<br>
+  				<input type="checkbox" name="add" id="q3" checked>Пришлите мне новости<br></i></p>
+  		  </fieldset>
+  		  <p id="reply1"></p>
+  		</form>
+  		  <br>	
+  		<form onsubmit="document.getElementById('reply2').innerHTML='Спасибо! Ваше сообщение отправлено. Мы свяжемся с Вами как можно скорее.';return false">
+		   <fieldset>
+		 		<legend>Обратная связь</legend>
+				<p><label for="quest">Тема вопроса</label>
+				<select id="quest">
+					<option value=0>Выберите тему...</option>
+					<option value=1>Записаться на занятие</option>
+					<option value=2>Информация на сайте</option>
+					<option value=3>Как тренироваться</option>
+					<option value=4>Другое</option>
+				</select><br>
+				<label for="email">E-mail * </label> 
+				<input type="email" id="email" placeholder= "xxx@xxx.xx"></p>
+				<p><label for="message">Ваше сообщение:</label><br>
+					<textarea id="message" cols=30 rows=6>Ваше сообщение
+					</textarea></p>
+		   </fieldset>	   
+		  <p><input class="formbutton" type="submit" value="Отправить" ></p>
+		  <p id="reply2"></p>
+		</form>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8">
+		<meta name="Description" content="Паркур – новый модный массовый вид спорта, который соединяет силовые упражнения и спортивную акробатику. История, трюки, видео, обучение от ведущих мастеров Москвы">
+		<meta name="Keywords" content="паркур, акробатика, полоса препятствий, преодоление препятствий, urban sport, parkour, tracer, прыжки, каскадеры, городской спорт, занятия акробатикой, занятия паркуром">
+		<title>Паркур – спорт для смелых и модных!</title>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="js/scripts.js"></script>
+	</head>
+    <body>
+        <header id="top">
+            <div class="container">
+                <div class="brand">Паркур - спорт для смелых и модных!</div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#tricks">Трюки</a></li>
+                        <li><a href="#gallery">Видео</a></li>
+                        <li><a href="#practice">Обучение</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Все о паркуре</h1>
+                <a href="http://files.lbz.ru/wd/part2/Lesson24/" target="blank" onmouseover="this.innerHTML='Внимание!'" onclick=" this.innerHTML='Переходим...'" onmouseleave=" this.innerHTML='Посмотреть проект'"class="button">Посмотреть проект</a>
+            </div>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="service" style="width: 25%;">
+                    	<a href="#reasons">
+                        	<img src="images/serv1.png">
+                        </a>
+                        	<p>Причины заниматься паркуром</p>
+                    </div>
+    			<div class="service" style="width: 25%;">
+                    	<a href="#movies">
+                        	<img src="images/serv2.png">
+                        </a>
+                        	<p>Фильмы про паркур</p>
+                </div>
+                <div class="service" style="width: 25%;">
+                    <a href="#game">
+				           <img id="multipic" src="images/serv3.png">
+				    </a>
+				    <p>Игра о паркуре</p>
+				</div>
+                <div class="service" style="width: 25%;">
+                    <form>
+                      <fieldset id="logpass" style="padding:3px 12px; ">
+                        <p><label for="login" >Логин &nbsp;&nbsp; </label>
+                            <input size="12" id="login"></p>
+                        <p> <label for="pass">Пароль </label>
+                            <input type="password" size="12" id="pass"></p>
+                        <p><input type="button" id="butt" value = "Войти"    onclick="auth(document.getElementById('login').value, document.getElementById('pass').value)"></p>
+                      </fieldset>
+                    </form>
+                      <p id="greet" style="color:darkorange"></p>
+                      <p><strong>
+                        <script>
+                                var a=new Date()
+                                var m = a.getMonth()+1 
+                                if (m<10) m='0' + m
+                                document.write('Сегодня '+a.getDate()+'.'+m+'.'+a.getFullYear()) 
+                         </script></strong></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="container">
+                <h2>
+                    <script>
+                        var season
+                        var a = new Date() 
+                        var month = a.getMonth()
+                        if (month<2 || month==11) 
+                            season = 'Зима'
+                        else if (month>1 && month<5) 
+                            season = 'Весна'
+                        else if (month>4 && month<8) 
+                            season = 'Лето'
+                        else
+                            season = 'Осень'
+                        document.write(season+' – лучшее время для паркура!')
+                    </script>
+                </h2>
+                <div class="post">
+                    <div id="upper" class="inside">     
+                       <div class="photo">
+                        <script>
+                            document.write('<img src="images/slide1.jpg" id="slide0" class="shown ">')
+                            for (var j=1; j<4; j++)
+                                document.write('<img src="images/slide'+(j+1)+'.jpg" id="slide'+j+'" >')
+                        </script>
+                            <img src="images/arl.png" onclick="prev()" 
+                              class="arrow shown" style="left:10px" >
+                            <img src="images/arp.png" onclick="next()" 
+                              class="arrow shown" style="left:350px">
+                       </div>          
+                    </div>
+                    <h3>Идея и принципы</h3>
+                    <p><p class="orangetext"><strong>Парку́р</strong> (искаж. фр. parkour) – искусство <u>рационального</u> перемещения и преодоления препятствий с использованием прыжковых элементов, как правило, в городских условиях. Многими занимающимися воспринимается как <em>стиль жизни</em>. Сутью паркура является движение и преодоление препятствий различного характера. Это могут быть как  существующие архитектурные сооружения (перила, парапеты, стены и пр.), так и специально изготовленные конструкции. </p></p>
+                    <p><strong>Паркур</strong> – дисциплина, представляющая собой совокупность навыков владения телом, которые в нужный момент могут найти применение в различных ситуациях человеческой жизни. Основные факторы, используемые <strong>трейсерами</strong> (trace – путь, маршрут) – людьми, занимающимися паркуром: сила и верное её приложение, умение быстро оказаться в определённой точке пространства, используя лишь своё тело. Главной идеей паркура является выраженный Давидом Беллем принцип <i><q>нет границ, есть лишь препятствия, и любое препятствие можно преодолеть</q></i>. Основные ограничения в паркуре определяются <b>тремя его аксиомами: "Безопасность, Эффективность, Простота".</b>
+                    <strong id="show" style="cursor:pointer" onclick="this.hidden=true; document.getElementById('part2').hidden=false" >Показать больше</strong></p>
+                    <p  id="part2" hidden=true><strong>Паркур</strong> не учит использовать какие-либо средства или приспособления, а позволяет использовать только собственное тело и развивать навыки поведения в условиях «здесь и сейчас». Деревья, стены, крыши, парапеты и перила – обыкновенные препятствия трейсера. Крайне важны скорость реакции, умение оценивать обстановку и свои возможности. <strong id="hide" style="cursor:pointer" onclick="document.getElementById('part2').hidden=true;document.getElementById('show').hidden=false;" >Показать меньше</strong></p></p>
+                </div>
+                <div style="text-align: center;">
+					<h3 id="game"> 
+						Сыграй в игру «НАЙДИ ПАРУ» о паркуре<br> и получи промокод на бесплатное первое занятие!
+					</h3>
+					<iframe src="game/game.html" width=825px height=625px frameborder="0"> </iframe>
+				</div>
+                <div class="post">
+                    <img src="images/img2.jpg" alt="история паркура">
+                    <h3 id="history">История</h3>
+                    <p>Перед Первой мировой войной во Франции создается так называемый «Натуральный метод» (фр. <i>Methode naturelle</i>) движения. На основе наблюдения за аборигенами Африки, за тем, как они охотятся и двигаются, была создана новая универсальная методика обучения для солдат. Такие дисциплины как <em>бег, прыжки, скалолазание, самооборона, поднятие и метание предметов, эквилибристика, плавание</em> и другие – являлись базовыми составляющими «натурального метода». Метод показал себя очень действенным и эффективным на протяжении Первой и Второй мировых войн.</p>
+                    <p>Раймонд Белль, служивший в вооруженных силах Франции, практиковал «Натуральный метод». После окончания службы он пошёл в пожарную охрану. Его физические способности и навыки не раз помогали ему спасать людей в ситуациях, где техника была бессильна. Он быстро стал известен как один из самых ловких и сильных пожарных своего полка, был <em>чемпионом по скоростному карабканью по канату</em>, совершил несколько <strong>подвигов при спасении людей</strong>, и был награждён за свою храбрость медалями.
+                    Сын Раймонда, <strong>Давид Белль</strong> (1973), с детства старался подражать своему отцу: занимался <em>гимнастикой, лёгкой атлетикой, боевыми искусствами</em>. Именно он собрал первую команду «Yamakasi», с которой много лет тренировался в городе Лисс. Cтало понятно, что это целая тренировочная дисциплина, имеющая свои <strong>элементы</strong>, законы и правила.</p>
+                </div>
+                <div class="post">
+                    <img src="images/img3.jpg" alt="причины заняться паркуром">
+                    <h3 id="reasons">Причины заниматься паркуром</h3>
+                    <p><strong>Паркур – это весело!</strong> Он учит бороться со страхом перед окружающим миром, превращая город в гигантскую игровую площадку. Интересно находить необычные способы перемещения по городу. Это помогает тебе не потерять внутреннего ребенка, выпустить его наружу, исследовать город и границы возможностей собственного тела, да и просто  поиграть.</p>
+				  	<p><strong>Паркур – это физическая нагрузка.</strong> Бег, прыжки, лазанье по стенам. Паркур – это тренировка для всего тела, которая одновременно улучшает и владение телом, и координацию движений.</p>
+				  	<p><strong>Паркур – отличный способ завести друзей.</strong> Это командный спорт. Обычно им занимаются в группах, члены которых очень дружелюбны и поддерживают друг друга. Это не соревнование. Общая цель – хорошо провести время и совершенствовать себя.</p>
+				  	<p><strong>Паркур – это вызов самому себе.</strong> Он требует от тебя физического и умственного напряжения. Ты сможешь доказать себе, на что ты способен, стать увереннее в себе, и это отразится на других областях жизни.</p>
+                </div>
+                <div class="post">
+                    <img src="images/img4.jpg" alt="Фильмы и игры с паркуром">
+                    <h3 id="movies">Фильмы и игры с элементами паркура</h3>
+                    <p>Паркур получил широкую известность после выхода фильмов <strong>«Ямакаси: Новые самураи»</strong> о команде трейсеров и фильмов <strong>«Тринадцатый район»</strong> и «13-й район: Ультиматум» (автор сценариев – Люк Бессон), в которых <strong>Давид Белль</strong> снялся в одной из главных ролей.<br>
+                    Элементы <strong>паркура</strong> есть в сценах погонь в одном из фильмов бондианы «Казино "Рояль"».<br>
+					В 2007 году режиссёр Руслан Бальцер снял российский фильм «Дерзкие дни», рассказывающий о приключениях команды трейсеров «Urban Monkeys».<br>
+					Элементы паркура есть в приключенческом фильме «Принц Персии: Пески времени» (2010).<br>
+					В снятом в 2011 году российском боевике «Бой с тенью 3D: Последний раунд» в сцене погони на гонконгском рынке также есть элементы паркура.<br>
+					Некоторые элементы паркура в сочетании с боевыми сценами часто использовал в своих фильмах <strong>Джеки Чан</strong>.</p>
+					<p>В 2007 году студия <i>Core Design Ltd.</i> выпустила игру про паркур – <strong>«Free Running»</strong>. <br>
+					В 2008 году студия <i>EA Digital Illusions Creative Entertaiment</i> выпустила паркур-игру <strong>«Mirror's Edge»</strong>. Игра получила высокие оценки и отзывы множества трейсеров самого высокого уровня. Она отличается высоким реализмом и качественно передает <strong>движения трейсера при преодолении препятствий</strong>.</p>
+					<div class="inside" max-width="300px">
+						<form>
+						  <fieldset style="">
+						    <legend>Готовы к паркуру?</legend>
+						    <p><label for="height" >Рост в см:</label>
+				  				<input type="number" id="height" value="170" onchange="calc()" min="50" max="250">
+						    	<label for="weight">Вес в кг:</label>
+				  				<input type="number" id="weight" value="60" onchange="calc()" min="10" max="300">
+				  			    <label for="gender">Пол</label>
+						    	<select id="gender" value="0" onchange="calc()">
+						    		<option value=0>М</option>
+						    		<option value=1>Ж</option>
+						    	</select></p>
+						     <p>Индекс массы тела: <span id="w_index" style="color:darkorange"><i>ожидание данных</i></span></p>
+						     <p id="verdict" style="color:darkorange"></p>
+						  </fieldset>
+						</form>
+					</div>
+					<p>Стиль передвижения персонажа игрока паркуром приобрел достаточную популярность и в других играх, в которых происходят активные передвижения игрока, в том числе и по вертикали и над землей (например, по крышам). К числу таких игр относятся:<br>Серия игр «Assassin’s Creed»<br>Онлайн игра «Warframe», <br>игры «Free Running», «Dying Light» и «The Following».
+					</p>
+                </div>
+                <h2>Тренировки по паркуру</h2>
+                    <h3 id="tricks">Простые трюки</h3> 
+                    <div class="services post" style="margin-top: 0 !important">
+	                    <div class="service" style="margin-top: 0 !important">
+	                    	<p><strong>ЛАЧ</strong></p>
+		                    <img src="images/t11.jpg">
+		                    <img src="images/t12.jpg">
+		                    <img src="images/t13.jpg">
+	                	</div>
+	                    <div class="service" style="margin-top: 0 !important">
+	                    	<p><strong>МАНКИ-КОНГ</strong></p>
+		                    <img src="images/t21.jpg">
+		                    <img src="images/t22.jpg">
+		                    <img src="images/t23.jpg">
+	                    </div>
+	                    <div class="service" style="margin-top: 0 !important">
+	                    	<p><strong>РАЗГИБ</strong></p>
+		                    <img src="images/t31.jpg">
+		                    <img src="images/t32.jpg">
+		                    <img src="images/t33.jpg">
+	                    </div>
+                	</div> 
+                <div class="post" id="gall">
+                    <h3 id="photos">Фотогалерея о паркуре</h3>
+                            <div id="block1" class="test2">
+                                <img src="images/example1.jpg">
+                            </div>
+                            <div id="block2" class="test2">
+                                <img src="images/example2.jpg">
+                            </div>
+                            <div id="block3"class="test2">
+                                <img src="images/example3.jpg">
+                            </div>
+                            <div id="block4" class="test2">
+                                <img src="images/example4.jpg">
+                            </div>
+                            <div id="block5" class="test2">
+                                <img src="images/example5.jpg">
+                            </div>
+                            <div id="block6"class="test2">
+                                <img src="images/example6.jpg">
+                            </div>
+                </div>              
+                <div style="text-align: center;">
+                    <h3 id="gallery">Видео тренировок по паркуру</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yTEZi8j_ivU?rel=0&amp;showinfo=0&amp;start=19" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h2 id="practice">Где тренироваться – секции паркура</h2>
+				<div style="text-align: center;">
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CBuyrJQQ8C" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                </div>
+                <div  style="width: 70%; margin: auto">
+                	<form>
+          			  <fieldset id='details'>
+					    <legend>Опрос о паркуре</legend>
+					    <p><label for="age">Сколько Вам лет?</label>
+			  				<input type="number" id="age" min="5" max="100" onchange="rep1()"></p>
+			  			<p><label for="favcolor">Ваш любимый цвет?</label>
+			  				<input type="color" id="favcolor"  onchange="document.getElementById('details').style.borderColor=this.value "></p>
+			  			<p><script>
+			  					for (var g=0; g<4; g++)
+			  						document.write ('<input type="radio" name="parkour"  id="'+g+'"  onclick="rep1(this.id)">'+q[g]+'<br>')
+						</script></p>
+			  			<p>	<input type="checkbox" name="add" id="q2" checked>Я согласен с условиями Пользовательского соглашения<br>
+			  				<input type="checkbox" name="add" id="q3" checked>Пришлите мне новости<br></i></p>
+			  		  </fieldset>
+			  		  <p id="reply1"></p>
+			  		</form>
+			  		  <br>	
+			  		<form onsubmit="document.getElementById('reply2').innerHTML='Спасибо! Ваше сообщение отправлено. Мы свяжемся с Вами как можно скорее.';return false">
+			  		  <fieldset>
+					    <legend>Обратная связь</legend>
+					    <p><label for="quest">Тема вопроса</label>
+					    	<select id="quest">
+					    		<option value=0>Выберите тему...</option>
+					    		<option value=1>Записаться на занятие</option>
+					    		<option value=2>Информация на сайте</option>
+					    		<option value=3>Как тренироваться</option>
+					    		<option value=4>Другое</option>
+					    	</select><br>
+					    	<label for="email">E-mail * </label> 
+					    	<input type="email" id="email" placeholder= "xxx@xxx.xx">
+					    </p>
+					    <p><label for="message">Ваше сообщение:</label><br>
+					    	<textarea id="message" cols=30 rows=6>Ваше сообщение
+					    	</textarea></p>
+					  </fieldset>		  
+					  <p><input class="formbutton" type="submit" value="Отправить" ></p>
+					  <p id="reply2"></p>
+					</form>
+                </div>
+
+                                <p><i>На тестовой странице частично использованы текстовые материалы из <a href="https://ru.wikipedia.org" target="blank">Википедии</a>.</i></p>
+                <br><a href="#top">В начало</a>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="brand">Все о паркуре</div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#tricks">Трюки</a></li>
+                        <li><a href="#gallery">Видео</a></li>
+                        <li><a href="#practice">Обучение</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">© 2018 Автор, Издательство БИНОМ. Лаборатория знаний</p>
+            </div>
+        </footer>
+        <script>
+            document.write('Hello, world!')
+            document.getElementById('multipic').src = "images/serv"+
+            (Math.floor(Math.random()*3)+3)+".png"
+        </script>
+    </body>
+</html>
